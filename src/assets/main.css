@@ -1,0 +1,59 @@
+/* @import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+
+body {
+    --s: 125px; /* control the size */
+    --c1: #a051f9;
+    --c2: #9b4cf4;
+    
+    --_g: var(--c1)        6.2%,var(--c2)  6.3% 18.7%,var(--c1) 18.8% 31.2%,
+          var(--c2) 31.3% 43.7%,var(--c1) 43.8% 56.2%,var(--c2) 56.3% 68.7%,#0000 68.8%;
+    background:
+      radial-gradient(var(--s) at 100% 0   ,var(--_g)),
+      radial-gradient(var(--s) at 0    0   ,var(--_g)),
+      radial-gradient(var(--s) at 0    100%,var(--_g)),
+      radial-gradient(var(--s) at 100% 100%,var(--_g)) var(--c1);
+    background-size: var(--s) var(--s);
+  }
+  
+  hr {
+    border-color: #ffffff;
+  }
+  
+  a, button {
+    all: unset;
+    cursor: pointer;
+  }
